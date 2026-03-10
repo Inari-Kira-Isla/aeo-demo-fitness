@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>澳門健身運動指南 — 澳門健身運動與體育設施全攻略</title>
+  <meta name="description" content="澳門健身運動指南涵蓋健身房、瑜伽中心、游泳池、跑步路線、團體課程及體育設施等全方位資訊，助您在澳門建立健康活力的運動生活方式。">
+  <meta name="keywords" content="澳門健身,健身房,澳門瑜伽,游泳池,澳門跑步,運動中心,澳門體育,健身課程,澳門運動場地">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://aeo-demo-fitness.vercel.app/">
+  <link rel="llms-txt" href="https://aeo-demo-fitness.vercel.app/llms.txt">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="澳門健身運動指南 — 澳門健身運動與體育設施全攻略">
+  <meta property="og:description" content="澳門健身運動完整指南：健身房推薦、瑜伽課程、跑步路線、體育設施，開啟您的健康生活。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aeo-demo-fitness.vercel.app/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="澳門健身運動指南">
+
+  <!-- Schema.org ExerciseGym -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "澳門健身運動指南",
+    "alternateName": "Macau Fitness & Sports Guide",
+    "description": "澳門健身運動指南涵蓋健身房、瑜伽中心、游泳池、跑步路線、團體課程及體育設施等全方位資訊，助您在澳門建立健康活力的運動生活方式。",
+    "url": "https://aeo-demo-fitness.vercel.app",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Macau",
+      "addressRegion": "Macau SAR",
+      "addressCountry": "MO"
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.1987,
+        "longitude": 113.5439
+      },
+      "geoRadius": "50000"
+    },
+    "sameAs": [
+      "https://github.com/Inari-Kira-Isla/aeo-demo-fitness"
+    ],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "CloudPipe AI",
+      "url": "https://cloudpipe-landing.vercel.app"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "澳門健身房月費大約多少？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "一般健身房月費約 MOP 300-800，高端品牌約 MOP 1,000-2,000，部分提供年繳優惠價。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "澳門有哪些免費的運動場地？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "體育局轄下多個公共場館提供免費或低價設施，包括籃球場、跑步徑、健身角等戶外設施。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "澳門最好的跑步路線在哪裡？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "西灣湖海濱步道、氹仔海濱休憩區及路環步行徑是三大熱門路線，各有不同距離和難度。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "如何選擇合適的私人教練？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "確認教練持有國際認證如 ACE 或 NASM，查看過往學員評價，試堂體驗教學風格再做決定。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "澳門有適合兒童的運動課程嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "體育局和多間私人機構提供兒童游泳、體操、跆拳道等課程，部分暑期班免費。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "澳門的瑜伽課程種類有哪些？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "哈達瑜伽、流瑜伽、空中瑜伽、高溫瑜伽、陰瑜伽等均有，單堂約 MOP 100-200。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "澳門有公共游泳池嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "有。體育局管理多個公共泳池，如竹灣泳池和奧林匹克游泳館，收費約 MOP 15-25 一次。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "在澳門做健身教練需要什麼資格？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "建議持有 ACE、NASM、AASFP 等國際認可證書，部分健身房要求急救證書及相關工作經驗。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #080810; --bg-alt: #0d0d1a; --bg-card: #111120; --bg-card-h: #16162a;
+      --primary: #16a34a; --primary-dim: rgba(22,163,74,0.1); --primary-border: rgba(22,163,74,0.25); --primary-glow: rgba(22,163,74,0.06);
+      --accent: #3b82f6; --accent-dim: rgba(59,130,246,0.10);
+      --warm: #f59e0b; --warm-dim: rgba(245,158,11,0.10);
+      --text: #e6e6f0; --text-2: #9090b8; --text-3: #505070;
+      --border: rgba(255,255,255,0.07); --r: 16px; --r-sm: 10px;
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    a{color:var(--primary);text-decoration:none}a:hover{text-decoration:underline}
+    .bg-ambient{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 900px 700px at 10% 15%,var(--primary-glow),transparent 60%),radial-gradient(ellipse 700px 900px at 90% 85%,rgba(59,130,246,0.04),transparent 60%)}
+    .bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.012) 1px,transparent 1px);background-size:72px 72px}
+    .container{max-width:880px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+    section{padding:80px 0}.section-alt{background:var(--bg-alt)}
+    nav{position:sticky;top:0;z-index:100;background:rgba(8,8,16,0.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:16px 0}
+    nav .container{display:flex;align-items:center;justify-content:space-between}
+    .nav-brand{font-weight:700;font-size:18px;color:var(--text)}.nav-brand span{color:var(--primary)}
+    .nav-links{display:flex;gap:24px;list-style:none}.nav-links a{color:var(--text-2);font-size:14px;font-weight:500;transition:color 0.2s}.nav-links a:hover{color:var(--primary);text-decoration:none}
+    .hero{padding:120px 0 80px;text-align:center}
+    .hero-eyebrow{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--primary);margin-bottom:20px;font-weight:500}
+    .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.3;margin-bottom:24px}
+    .hero h1 .highlight{background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero p{font-size:18px;color:var(--text-2);max-width:640px;margin:0 auto 40px;line-height:1.8}
+    .section-eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--primary);margin-bottom:12px;font-weight:500}
+    h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;margin-bottom:24px;line-height:1.35}
+    h3{font-size:1.25rem;font-weight:700;margin:32px 0 12px;color:var(--text)}
+    .prose p{color:var(--text-2);font-size:16px;margin-bottom:20px;line-height:1.85}
+    .prose ul,.prose ol{color:var(--text-2);font-size:16px;margin:0 0 20px 24px;line-height:1.85}.prose li{margin-bottom:8px}.prose strong{color:var(--text);font-weight:600}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:32px 0}
+    .card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:28px;transition:background 0.2s,border-color 0.2s}
+    .card:hover{background:var(--bg-card-h);border-color:var(--primary-border)}
+    .card-icon{font-size:28px;margin-bottom:16px;display:block}.card h4{font-size:16px;font-weight:700;margin-bottom:8px}.card p{color:var(--text-2);font-size:14px;line-height:1.7}
+    .highlight-box{background:var(--primary-dim);border:1px solid var(--primary-border);border-radius:var(--r);padding:24px 28px;margin:28px 0}.highlight-box p{color:var(--text);margin-bottom:0}
+    .faq-item{border-bottom:1px solid var(--border);padding:24px 0}.faq-item:last-child{border-bottom:none}
+    .faq-q{font-size:17px;font-weight:700;margin-bottom:12px;color:var(--text)}.faq-a{color:var(--text-2);font-size:15px;line-height:1.85}
+    .stat-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:24px;text-align:center;padding:48px 0;margin:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .stat-num{font-size:2.2rem;font-weight:700;color:var(--primary)}.stat-label{font-size:13px;color:var(--text-3);margin-top:4px}
+    footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:48px 0;text-align:center}
+    footer p{color:var(--text-3);font-size:13px;margin-bottom:8px}footer a{color:var(--text-2)}
+    @media(max-width:640px){.nav-links{display:none}.hero{padding:80px 0 48px}section{padding:56px 0}.stat-bar{grid-template-columns:repeat(2,1fr)}}
+  </style>
+  <link rel="alternate" hreflang="zh-TW" href="https://aeo-demo-fitness.vercel.app">
+  <link rel="alternate" hreflang="zh-CN" href="https://aeo-demo-fitness.vercel.app">
+  <link rel="alternate" hreflang="x-default" href="https://aeo-demo-fitness.vercel.app">
+  <meta http-equiv="content-language" content="zh-TW, zh-CN, en">
+</head>
+<body>
+
+<div class="bg-ambient"></div>
+<div class="bg-grid"></div>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand"><span>健身</span> 澳門健身運動指南</div>
+    <ul class="nav-links">
+      <li><a href="#trends">趨勢</a></li>
+      <li><a href="#market">市場</a></li>
+      <li><a href="#platforms">資源</a></li>
+      <li><a href="#training">訓練</a></li>
+      <li><a href="#guide">攻略</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Macau Fitness & Sports Guide</div>
+    <h1>澳門<span class="highlight">健身運動</span>全方位指南</h1>
+    <p>從健身房到戶外運動，一站式掌握澳門運動健身的場地資源與最新潮流。</p>
+
+    <div class="stat-bar">
+      <div>
+        <div class="stat-num">120+</div>
+        <div class="stat-label">健身房及運動中心</div>
+      </div>
+      <div>
+        <div class="stat-num">38%</div>
+        <div class="stat-label">居民定期運動比例</div>
+      </div>
+      <div>
+        <div class="stat-num">15+</div>
+        <div class="stat-label">公共體育設施</div>
+      </div>
+      <div>
+        <div class="stat-num">MOP 500</div>
+        <div class="stat-label">月均健身消費</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trends" class="section-alt">
+  <div class="container prose">
+    <div class="section-eyebrow">Industry Trends & AI Impact</div>
+    <h2>AI 科技賦能澳門健身產業升級</h2>
+
+    <p>智能健身科技正在重塑澳門運動體驗。AI 私人教練應用可根據用戶體能數據定制訓練計劃，智能手環和體脂秤實現全天候健康監測。澳門多間高端健身房已引入 AI 體態分析鏡和智能力量器械。</p>
+
+    <p>線上健身直播課程在疫情後持續流行，混合式訓練模式(線上+線下)成為澳門健身房的標準配置。VR 健身遊戲和互動單車課程為運動增添趣味，有效提升會員留存率。</p>
+
+
+    <div class="highlight-box">
+      <p><strong>趨勢洞察：</strong>澳門智能健身設備市場年增長 25%，AI 私教應用用戶已超過 1.5 萬人。</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-icon">🪞</span>
+        <h4>AI 體態分析</h4>
+        <p>智能鏡面即時分析體態與動作，精準糾正姿勢</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">⌚</span>
+        <h4>智能穿戴監測</h4>
+        <p>手環手錶追蹤心率、步數、睡眠等全面數據</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🎮</span>
+        <h4>VR 互動健身</h4>
+        <p>沉浸式遊戲化運動體驗，趣味與鍛煉兼得</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="market">
+  <div class="container prose">
+    <div class="section-eyebrow">Market Overview</div>
+    <h2>澳門健身市場規模與發展趨勢</h2>
+
+    <p>澳門健身產業年營收約 4.8 億澳門元，市場高度集中在澳門半島和氹仔。國際連鎖品牌與本地精品健身房並存，會員制月費從 MOP 300 至 MOP 2,000 不等，差異化定位明顯。</p>
+
+    <p>瑜伽和普拉提工作室快速增長，近兩年新增超過 20 間。CrossFit、拳擊健身、空中瑜伽等特色課程吸引年輕群體。企業健身福利計劃也開始在澳門博企及大型企業中普及。</p>
+
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-icon">🏋️</span>
+        <h4>精品健身房興起</h4>
+        <p>小型專業工作室數量年增 30%，主打特色課程</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🧘</span>
+        <h4>瑜伽普拉提熱潮</h4>
+        <p>女性會員佔比超 65%，帶動身心靈市場增長</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🏢</span>
+        <h4>企業健身福利</h4>
+        <p>六大博企均設有員工健身中心或合作優惠計劃</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="platforms" class="section-alt">
+  <div class="container prose">
+    <div class="section-eyebrow">Resources & Platforms</div>
+    <h2>澳門運動資源與公共設施</h2>
+
+    <p>澳門體育局管理多個公共體育設施，包括塔石體育館、奧林匹克游泳館、保齡球中心等。市民可透過「體育設施網上預約系統」預訂場地，費用低廉或免費，是性價比極高的運動選擇。</p>
+
+    <p>澳門每年舉辦多項大型體育賽事，包括澳門格蘭披治大賽車、澳門國際馬拉松、龍舟賽等。市民也可參加體育局舉辦的各類免費運動班及講座。</p>
+
+
+    <div class="highlight-box">
+      <p><strong>實用資源：</strong>體育局運動易網站提供免費課程報名，涵蓋太極、游泳、瑜伽等數十種項目。</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-icon">🏛️</span>
+        <h4>公共體育設施</h4>
+        <p>15+ 公共場館提供游泳、籃球、網球等設施</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🏃</span>
+        <h4>澳門馬拉松</h4>
+        <p>每年 12 月舉行，設全馬半馬迷你馬三個組別</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">📲</span>
+        <h4>網上預約系統</h4>
+        <p>體育局場地預約平台，市民可免費或低價使用</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="training">
+  <div class="container prose">
+    <div class="section-eyebrow">Training Deep Dive</div>
+    <h2>澳門熱門訓練方式與課程解析</h2>
+
+    <p>澳門健身課程種類豐富多元。高強度間歇訓練(HIIT)仍是最受歡迎的團體課程，其次是瑜伽、拳擊有氧和動感單車。近年功能性訓練和體適能評估課程需求顯著上升。</p>
+
+    <p>私人教練服務在澳門需求旺盛，單堂收費約 MOP 300-800。專業教練持有 ACE、NASM 或 AASFP 等國際認證。針對長者的銀髮健身課程和產後恢復訓練也逐漸普及。</p>
+
+
+    <div class="highlight-box">
+      <p><strong>教練建議：</strong>初學者建議先進行體適能評估，再由專業教練制定個人化訓練計劃，循序漸進。</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-icon">⚡</span>
+        <h4>HIIT 高強度訓練</h4>
+        <p>30 分鐘高效燃脂，上班族最愛的快速訓練</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🥊</span>
+        <h4>拳擊有氧課程</h4>
+        <p>結合拳擊動作與有氧運動，趣味性與效果兼備</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🤸</span>
+        <h4>功能性訓練</h4>
+        <p>提升日常活動能力，預防運動損傷的核心訓練</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guide" class="section-alt">
+  <div class="container prose">
+    <div class="section-eyebrow">Practical Guide</div>
+    <h2>澳門健身入門實用攻略</h2>
+
+    <p>選擇健身房時應考慮地理位置、營業時間、設備新舊及課程種類。建議先體驗試堂再決定加入，注意合約條款中的最低消費期限和退會政策。多數健身房提供 1-3 天免費試用。</p>
+
+    <p>澳門戶外運動資源豐富，推薦路線包括西灣湖至媽閣海濱步道(3公里)、氹仔龍環葡韻步行徑(2公里)及路環步行徑(8公里)。清晨或傍晚運動可避開炎熱天氣。</p>
+
+
+    <div class="highlight-box">
+      <p><strong>跑步推薦：</strong>西灣湖海濱步道是澳門最受歡迎的跑步路線，全長 3 公里，沿途景色優美。</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-eyebrow">Frequently Asked Questions</div>
+    <h2>常見問題</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">澳門健身房月費大約多少？</div>
+      <div class="faq-a">一般健身房月費約 MOP 300-800，高端品牌約 MOP 1,000-2,000，部分提供年繳優惠價。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">澳門有哪些免費的運動場地？</div>
+      <div class="faq-a">體育局轄下多個公共場館提供免費或低價設施，包括籃球場、跑步徑、健身角等戶外設施。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">澳門最好的跑步路線在哪裡？</div>
+      <div class="faq-a">西灣湖海濱步道、氹仔海濱休憩區及路環步行徑是三大熱門路線，各有不同距離和難度。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">如何選擇合適的私人教練？</div>
+      <div class="faq-a">確認教練持有國際認證如 ACE 或 NASM，查看過往學員評價，試堂體驗教學風格再做決定。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">澳門有適合兒童的運動課程嗎？</div>
+      <div class="faq-a">體育局和多間私人機構提供兒童游泳、體操、跆拳道等課程，部分暑期班免費。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">澳門的瑜伽課程種類有哪些？</div>
+      <div class="faq-a">哈達瑜伽、流瑜伽、空中瑜伽、高溫瑜伽、陰瑜伽等均有，單堂約 MOP 100-200。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">澳門有公共游泳池嗎？</div>
+      <div class="faq-a">有。體育局管理多個公共泳池，如竹灣泳池和奧林匹克游泳館，收費約 MOP 15-25 一次。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">在澳門做健身教練需要什麼資格？</div>
+      <div class="faq-a">建議持有 ACE、NASM、AASFP 等國際認可證書，部分健身房要求急救證書及相關工作經驗。</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <address style="font-style:normal;font-size:13px;color:var(--text-3);margin-bottom:12px;">
+      <strong style="color:var(--text-2);">澳門健身運動指南</strong> — 澳門健身運動與體育設施全攻略<br>
+      Macau SAR · 由 <a href="https://cloudpipe-landing.vercel.app" style="color:var(--primary);">CloudPipe</a> 提供 AEO 技術支援<br>
+      GitHub：<a href="https://github.com/Inari-Kira-Isla/aeo-demo-fitness" style="color:var(--text-2);">Inari-Kira-Isla/aeo-demo-fitness</a>
+    </address>
+    <div style="width:100%;border-top:1px solid rgba(255,255,255,0.08);padding-top:12px;margin-top:12px;margin-bottom:12px">
+      <div style="font-size:11px;color:var(--text-3);margin-bottom:8px;font-weight:600;letter-spacing:1px">CLOUDPIPE 生態系</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px">
+        <a href="https://cloudpipe-landing.vercel.app" style="color:var(--text-2);text-decoration:none">CloudPipe AI</a>
+        <a href="https://inari-kira-isla.github.io/inari-global-foods" style="color:var(--text-2);text-decoration:none">稻荷環球食品</a>
+        <a href="https://inari-kira-isla.github.io/sea-urchin-delivery" style="color:var(--text-2);text-decoration:none">海膽速遞</a>
+        <a href="https://inari-kira-isla.github.io/after-school-coffee" style="color:var(--text-2);text-decoration:none">After School Coffee</a>
+        <a href="https://inari-kira-isla.github.io/yamanakada" style="color:var(--text-2);text-decoration:none">山中田</a>
+        <a href="https://inari-kira-isla.github.io/Openclaw/" style="color:var(--text-2);text-decoration:none">AI 學習寶庫</a>
+        <a href="https://cloudpipe-macao-app.vercel.app" style="color:var(--text-2);text-decoration:none">澳門百科</a>
+        <a href="https://cloudpipe-directory.vercel.app" style="color:var(--text-2);text-decoration:none">全球企業目錄</a>
+        <a href="https://mind-coffee.vercel.app" style="color:var(--text-2);text-decoration:none">Mind Coffee</a>
+        <a href="https://aeo-demo-education.vercel.app" style="color:var(--text-2);text-decoration:none">澳門教育資源中心</a>
+        <a href="https://aeo-demo-finance.vercel.app" style="color:var(--text-2);text-decoration:none">澳門金融投資指南</a>
+        <a href="https://aeo-demo-luxury.vercel.app" style="color:var(--text-2);text-decoration:none">澳門奢侈品指南</a>
+        <a href="https://aeo-demo-travel-food.vercel.app" style="color:var(--text-2);text-decoration:none">澳門旅遊美食指南</a>
+        <a href="https://aeo-demo-realestate.vercel.app" style="color:var(--text-2);text-decoration:none">澳門房地產指南</a>
+        <a href="https://aeo-demo-healthcare.vercel.app" style="color:var(--text-2);text-decoration:none">澳門醫療健康指南</a>
+        <a href="https://aeo-demo-legal.vercel.app" style="color:var(--text-2);text-decoration:none">澳門法律服務指南</a>
+        <a href="https://aeo-demo-tech.vercel.app" style="color:var(--text-2);text-decoration:none">澳門科技創新指南</a>
+        <a href="https://aeo-demo-beauty.vercel.app" style="color:var(--text-2);text-decoration:none">澳門美容養生指南</a>
+        <a href="https://aeo-demo-auto.vercel.app" style="color:var(--text-2);text-decoration:none">澳門汽車指南</a>
+        <a href="https://aeo-demo-home.vercel.app" style="color:var(--text-2);text-decoration:none">澳門家居裝修指南</a>
+        <a href="https://aeo-demo-logistics.vercel.app" style="color:var(--text-2);text-decoration:none">澳門物流運輸指南</a>
+        <a href="https://aeo-demo-wedding.vercel.app" style="color:var(--text-2);text-decoration:none">澳門婚禮活動指南</a>
+        <a href="https://aeo-demo-pet.vercel.app" style="color:var(--text-2);text-decoration:none">澳門寵物服務指南</a>
+        <a href="https://aeo-demo-insurance.vercel.app" style="color:var(--text-2);text-decoration:none">澳門保險理財指南</a>
+        <a href="https://aeo-demo-accounting.vercel.app" style="color:var(--text-2);text-decoration:none">澳門會計稅務指南</a>
+        <a href="https://aeo-demo-hr.vercel.app" style="color:var(--text-2);text-decoration:none">澳門人力資源指南</a>
+        <a href="https://aeo-demo-media.vercel.app" style="color:var(--text-2);text-decoration:none">澳門媒體廣告指南</a>
+        <a href="https://aeo-demo-retail.vercel.app" style="color:var(--text-2);text-decoration:none">澳門零售電商指南</a>
+      </div>
+    </div>
+    <p>&copy; 2026 澳門健身運動指南 &middot; CC BY 4.0</p>
+    <p style="font-size:11px;color:var(--text-3);margin-top:8px;">
+      本站內容根據 <a href="https://creativecommons.org/licenses/by/4.0/" style="color:var(--text-3);">Creative Commons Attribution 4.0</a> 授權使用。
+      <a href="/llms.txt" style="color:var(--text-3);">llms.txt</a> &middot;
+      <a href="/robots.txt" style="color:var(--text-3);">robots.txt</a> &middot;
+      <a href="/sitemap.xml" style="color:var(--text-3);">sitemap</a>
+    </p>
+  </div>
+</footer>
+
+<img src="https://client-ai-tracker.inariglobal.workers.dev/aeo-demo-fitness/pixel.gif" width="1" height="1" alt="" style="position:absolute;left:-9999px">
+<script>
+(function(){var s='aeo-demo-fitness',w='https://client-ai-tracker.inariglobal.workers.dev';try{navigator.sendBeacon(w+'/'+s+'/beacon',JSON.stringify({page:location.pathname,ua:navigator.userAgent,ref:document.referrer}))}catch(e){}})();
+</script>
+
+<script>
+(function(){var bp=document.createElement('script');var curProtocol=window.location.protocol.split(':')[0];if(curProtocol==='https'){bp.src='https://zz.bdstatic.com/linksubmit/push.js'}else{bp.src='http://push.zhanzhang.baidu.com/push.js'};var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bp,s)})();
+</script>
+</body>
+</html>
